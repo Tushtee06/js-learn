@@ -14,3 +14,22 @@
 const id = Symbol('123')
 const anotherId = Symbol('123')
 console.log(id===anotherId);
+
+//********************************
+// stack(Primitive), Heap(Non-Primitive)
+let myYoutubeName = "tdotcom"
+let anothername = myYoutubeName
+anothername = "tushudotcom"
+ console.log(myYoutubeName);
+ console.log(anothername);
+
+ let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+ }
+let userTwo = userOne
+userTwo.email = "tushu@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+ 
